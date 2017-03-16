@@ -17,7 +17,6 @@ print(urlcon[l-1])
 print(urlcon[l-2])
 
 amiforgit=g.user('amiforgit')
-print(base64.b64decode(g.repository(urlcon[l-2],urlcon[l-1]).contents("/dev-config.yml").content))
 
 @app.route("/v1/<name>")
 def hello1(name):
