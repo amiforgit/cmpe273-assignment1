@@ -16,7 +16,7 @@ urlcon=f.split('/')
 l=len(urlcon)
 print(urlcon[l-1])
 print(urlcon[l-2])
-gh = g.login('amiforgit','#$123amigithub#$123')
+
 amiforgit=g.user('amiforgit')
 print(base64.b64decode(g.repository(urlcon[l-2],urlcon[l-1]).contents("/dev-config.yml").content))
 
