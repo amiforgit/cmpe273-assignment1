@@ -1,5 +1,4 @@
 from flask import Flask
-import requests
 import sys
 import yaml
 import json
