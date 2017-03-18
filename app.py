@@ -31,7 +31,7 @@ def hello1(name):
         name=name[:-5]+".yml"
         print(name)
         retval=base64.b64decode(g.repository(urlcon[l-2],urlcon[l-1]).contents(name).content)
-        retvalf=(json.dumps(yaml.load(retval), sort_keys=True, indent=2))
+        retvalf=(json.dumps(yaml.load(retval), sort_keys=False, indent=2))
         return retvalf
 @app.route("/")
 def hello2():
